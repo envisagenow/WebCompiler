@@ -4,13 +4,13 @@ using System.IO;
 using System.Diagnostics;
 
 namespace WebCompiler
-{
+{ 
     /// <summary>
     /// A service for working with the compilers.
     /// </summary>
     public static class CompilerService
     {
-        internal const string Version = "1.4.167";
+        internal const string Version = "1.12.0";
         internal const string WorkingDirectoryEnvVarName = "WEBCOMPILER_WORKING_DIRECTORY";
         private static readonly string _path = GetWorkingDirectoryPath();
         private static object _syncRoot = new object(); // Used to lock on the initialize step
